@@ -1,0 +1,63 @@
+######## jest
+
+Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
+
+1. Jest is used as a test runner (alternative: Mocha)
+2. but also as an assertion utility (alternative: Chai)
+3. In addition, it comes with utilities to spy, stub, and mock (asynchronous) functions
+4. the surrounding test suites (describe-block), test cases (it-block and test-block), and assertions (expect, toEqual),
+
+######## Enzyme
+
+- Enzyme makes it effortless testing React components with integration and unit tests. It is a testing library by Airbnb which got introduced for component tests in React, because it offers different rendering techniques for your React components and selectors to go through your rendered output. The rendered output is taken for the assertions in Jest then.
+- Enzyme can be used within Jest to render components (mount, shallow), to access the DOM of these components (find, prop, simulate), and to make assertions based on the DOM.
+- However, Enzyme is not strictly tied to Jest, it can be used in any other test runner too. 
+- You have to set up Enzyme in Jest for your React component tests.
+
+######## testing framework
+
+- jest
+
+Jest makes it faster and easier to write idiomatic JavaScript tests by having everything included. Jest comes with built-in mocking and assertion abilities. In addition, Jest runs your tests concurrently in parallel, providing a smoother, faster test run.
+
+- mocha
+
+Mocha is one of the most flexible JavaScript testing libraries available. Mocha provides developers with a base test framework, allowing you to have options as to which assertion, mocking, and spy libraries you want to use. This does require some additional setup and configuration, which is a downside. However, if having complete control of your testing framework is something you want, Mocha is by far the most configurable and best choice.
+
+So, with a completely configurable testing framework, which assertion, mocking, and spy libraries should you use? Chai is one of the most popular open-source assertion libraries used with Mocha. Chai is a BDD/TDD assertion library with an abundance of plugins and extensions. Sinon is a popular mocking and spy library. With robust documentation on fakes, stubs, spies, and mocks, Sinon is easy to pick up and integrate with Mocha.
+Mocha is an older and more mature open-source project than Jest. The community is large and provides a vast variety of documentation, StackOverflow questions, and support articles for if you get stuck in configuration.
+
+- difference between jest & mocha
+
+Next difference is that Jest uses Jasmine 2 as default for assertions, mocking and it also has its own mocking methods. On the other hand Mocha is more flexible and you can choose what you need and like. It can be used together with any other assertions or mock library (Chai, Sinon.JS, …).
+
+https://instea.sk/2016/08/testing-react-applications-with-karma-jest-or-mocha/
+
+
+- Bonus: Enzyme
+
+Enzyme can be used in addition to any testing framework. Enzyme is easy to configure and has additional libraries for integration with popular libraries (like jest-enzyme and chai-enzyme).
+
+- Karma
+
+Testing front-end code is not as simple as testing back-end code. Indeed, you have to test it on multiple browsers (Chrome, Edge, Firefox, Safari, etc.) and their different versions.
+Karma allows to test your code on real browsers and real devices such as phones, tablets. It starts the browsers and runs the tests on them.
+To sum up, Karma runs mocha on multiple browsers. The assertions of the tests are written using chai.
+
+- Assertions Lib
+
+Mocha allows you to use any assertion library you wish. In the above example, we’re using Node.js’ built-in assert module — but generally, if it throws an Error, it will work! This means you can use libraries such as: should.js, expect.js, chai
+
+- sinon.js
+
+Standalone test spies, stubs and mocks for JavaScript. Works with any unit testing framework.
+
+- test frameworks
+
+In generall test frameworks are expected to:
+
+provide test structure (Mocha, Jasmine, Jest)
+run tests and display test results (Mocha, Jasmine, Jest, Karma)
+make assertions (Chai, Jasmine)
+support mocks, spies, stubs (Sinon.JS, Jasmine)
+generate code coverage reports (Istanbul)

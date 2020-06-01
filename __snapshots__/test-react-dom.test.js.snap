@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxWithLabel changes the text after click 1`] = `
+<CheckboxWithLabel
+  labelOff="Off"
+  labelOn="On"
+>
+  <label>
+    <input
+      checked={true}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    On
+  </label>
+</CheckboxWithLabel>
+`;
+
+exports[`snapshot render 1`] = `
+<label>
+  <input
+    checked={false}
+    onChange={[Function]}
+    type="checkbox"
+  />
+  Off
+</label>
+`;
